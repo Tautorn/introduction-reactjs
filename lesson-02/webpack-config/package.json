@@ -1,12 +1,13 @@
 {
-  "name": "webpack-lesson-02",
+  "name": "webpack-config",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
     "dev": "webpack --mode development",
-    "start:dev": "webpack-dev-server"
+    "start:dev": "webpack-dev-server",
+    "eslint": "eslint ./src/*.js"
   },
   "author": "",
   "license": "ISC",
@@ -14,15 +15,21 @@
     "@babel/core": "^7.5.4",
     "@babel/preset-env": "^7.5.4",
     "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.2",
     "babel-loader": "^8.0.6",
+    "eslint": "^6.0.1",
+    "eslint-loader": "^2.2.1",
+    "eslint-plugin-react": "^7.14.2",
+    "eslint-watch": "^5.1.2",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.35.3",
-    "webpack-cli": "^3.3.5",
-    "webpack-dev-server": "^3.7.2"
+    "webpack-cli": "^3.3.5"
   },
   "dependencies": {
+    "eslint-config-airbnb": "^17.1.1",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "webpack-dev-server": "^3.7.2"
   }
 }
